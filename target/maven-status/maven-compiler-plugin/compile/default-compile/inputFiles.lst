@@ -1,0 +1,7 @@
+/home/codespace/spring_boot_based_ai_projects/src/main/java/com/example/springai/SpringAiProjectsApplication.java
+/home/codespace/spring_boot_based_ai_projects/src/main/java/com/example/springai/config/AiConfig.java
+/home/codespace/spring_boot_based_ai_projects/src/main/java/com/example/springai/rag/controller/RagController.java
+/home/codespace/spring_boot_based_ai_projects/src/main/java/com/example/springai/rag/model/DocumentRequest.java
+/home/codespace/spring_boot_based_ai_projects/src/main/java/com/example/springai/rag/model/QueryRequest.java
+/home/codespace/spring_boot_based_ai_projects/src/main/java/com/example/springai/rag/model/QueryResponse.java
+/home/codespace/spring_boot_based_ai_projects/src/main/java/com/example/springai/rag/service/RagService.java

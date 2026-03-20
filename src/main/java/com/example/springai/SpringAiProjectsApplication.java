@@ -6,24 +6,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * Spring Boot AI Projects Application
  *
- * <p>This application demonstrates three key AI/LLM concepts using Spring AI:
+ * <p>This application demonstrates a RAG (Retrieval-Augmented Generation) pipeline using Spring AI:
  *
  * <ul>
- *   <li><b>RAG Pipeline</b> – Retrieval-Augmented Generation: ingest documents, embed them into a
- *       vector store, retrieve relevant chunks, and augment the LLM prompt with context.
- *   <li><b>LangChain concepts</b> – Prompt templates, LLM chains, conversation memory, and
- *       sequential chains.
- *   <li><b>LangGraph concepts</b> – Stateful workflow graphs with typed nodes, conditional edges,
- *       and cyclic execution support.
+ *   <li><b>Ingestion</b> – raw text is split into chunks and embedded into a vector store.
+ *   <li><b>Retrieval</b> – at query time the top-K most semantically similar chunks are fetched.
+ *   <li><b>Generation</b> – the retrieved chunks are prepended to the LLM prompt as context.
  * </ul>
  *
- * <p>REST endpoints are available under:
- *
- * <ul>
- *   <li>{@code /api/rag} – RAG pipeline operations
- *   <li>{@code /api/langchain} – LangChain chain operations
- *   <li>{@code /api/langgraph} – LangGraph workflow operations
- * </ul>
+ * <p>REST endpoints are available under {@code /api/rag}.
  */
 @SpringBootApplication
 public class SpringAiProjectsApplication {
